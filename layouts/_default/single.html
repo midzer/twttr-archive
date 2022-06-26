@@ -1,3 +1,6 @@
 {{ partial "header.html" . }}
+{{ range .Params.photos }}
+<img src={{ printf "/img/%s" .url }}>
+{{ end }}
 {{ .Content | replaceRE "(<h[1-6]\\sid=\"([^\"]+)\"\\s?>)(.+)(</h[1-6]+>)" "${1}<a href=\"#${2}\">${3}</a>${4}" | safeHTML }}
 {{ partial "footer.html" . }}

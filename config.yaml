@@ -1,6 +1,6 @@
 baseurl: ''
-languageCode: en-us
-title: Minimalist
+languageCode: de
+title: midzers Archiv
 googleAnalytics: ""
 disqusShortname: ""
 preserveTaxonomyNames: true
@@ -16,19 +16,16 @@ disableKinds:
   - categories
   - tags
 
-permalinks:
-  writing: /:year/:month/:day/:slug/
-
 params:
-  description: "Minimalist theme for Hugo"
+  description: "Twitter Archiv (2014 bis 2022) von midzer"
 
 frontmatter:
-  author: Example
-  github: 'https://github.com/example'
-  facebook: 'https://facebook.com/example'
+  author: midzer
+  github: 'https://github.com/midzer'
+  facebook: 
   og_image: 
-  sitename: Minimalist
-  twitter: '@twitter'
+  sitename: midzers Archiv
+  twitter: '@midzer'
 
 sitemap:
   changefreq: monthly
@@ -42,5 +39,3 @@ outputFormats:
   JSON:
     mediatype: application/json
     baseName: feed
-
-
