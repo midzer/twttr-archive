@@ -2,12 +2,12 @@
   "version": "https://jsonfeed.org/version/1",
   "title": "{{ .Site.Title }}",
   "home_page_url": "{{ .Site.BaseURL }}",
-  "feed_url": "https://archiv.midzer.de/feed.json",
+  "feed_url": "https://archive.midzer.de/feed.json",
   "description": "{{ .Site.Params.description }}",
   "expired": false,
   "author": {
     "name": "midzer",
-    "url": "https://archiv.midzer.de/"
+    "url": "https://archive.midzer.de/"
   },
   "items": [
     {{ $list := (where .Site.RegularPages "Section" "tweets") }}
@@ -27,7 +27,7 @@
       "date_modified": "{{ .Date.Format `2016-02-09T14:22:00-07:00` | safeHTML }}",
       "author": {
         "name": "midzer",
-        "url": "https://archiv.midzer.de/"
+        "url": "https://archive.midzer.de/"
       }
     }{{ if ne (add $index 1) $len }},{{ end }}
     {{ end }}
