@@ -10,7 +10,7 @@
     <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
     <generator>{{ .Site.BaseURL }}</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
-    <atom:link href="https://archive.midzer.de/atom.xml" rel="self" type="application/atom+xml"/>
+    <atom:link href="https://midzer.de/archive/atom.xml" rel="self" type="application/atom+xml"/>
     {{ range where .Site.RegularPages "Section" "tweets" }}
     <item>
       <title>{{ .Title }}</title>

@@ -1,6 +1,6 @@
-baseurl: ''
+baseurl: 'https://midzer.de/archive/'
 languageCode: de
-title: midzers Archiv
+title: Archiv
 googleAnalytics: ""
 disqusShortname: ""
 preserveTaxonomyNames: true
